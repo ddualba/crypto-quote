@@ -4,8 +4,8 @@ const router = express.Router();
 // const { check, validationResult } = require('express-validator');
 const axios = require('axios').default;
 
-const cmc_key = process.env.cmc_test_key;
-// const cmc_key = process.env.cmc_private_key;
+// const cmc_key = process.env.cmc_test_key;
+const cmc_key = process.env.cmc_private_key;
 
 router.get('/', (req, res) => {
   res.send('send post requests to /coins route for pricing data');

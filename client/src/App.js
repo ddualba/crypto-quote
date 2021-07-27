@@ -4,7 +4,6 @@ import SearchBar from './components/SearchBar';
 import PricesGrid from './components/PricesGrid';
 import getPrices from './components/getPrices';
 
-// Material UI components
 import Container from '@material-ui/core/Container';
 
 const App = () => {
