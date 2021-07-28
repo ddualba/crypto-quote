@@ -32,7 +32,7 @@ const fetchPrices = async (search, setCoins) => {
 
   // const symbolList =
   //   'BTC,ETH,ADA,BNB,THETA,VET,VTHO,DOT,SOL,MATIC,LINK,ONE,ENJ,BEPRO,VRA,SAFEMOON,HNT';
-  const symbolList = search;
+  const symbolList = search.toUpperCase();
 
   const formData = {
     symbols: symbolList
@@ -60,10 +60,7 @@ const fetchPrices = async (search, setCoins) => {
     console.log(
       'There was an error with your search, check your search string is all valid symbols and API key is good.'
     );
-    console.log({
-      msg: err.response.statusText,
-      status: err.response.status
-    });
+    console.log(err);
   }
 };
 
